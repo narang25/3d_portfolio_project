@@ -37,9 +37,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Nikhil Narang",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "nikhilnarang2505@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -121,6 +121,23 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+        <div className="mt-6 flex flex-col items-center">
+    <h3 className="text-white text-[24px] font-bold mb-4">Connect with me</h3>
+    <div className="flex gap-6">
+
+      <a
+        href="https://www.linkedin.com/in/nikhil-narang25/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+          alt="LinkedIn"
+          className="w-10 h-10 rounded-full bg-white p-2 hover:scale-110 transition duration-300"
+        />
+      </a>
+    </div>
+  </div>
       </motion.div>
 
       <motion.div

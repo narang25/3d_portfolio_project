@@ -1,3 +1,6 @@
+import kajalImage from '../images/kajal-narang.jpg';  // Correct relative path
+import vanshikaImage from '../images/vanshika-taya.jpg';  // Correct relative path
+
 import {
   mobile,
   backend,
@@ -46,7 +49,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Problem Solver",
     icon: mobile,
   },
   {
@@ -54,7 +57,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Cloud Native",
     icon: creator,
   },
 ];
@@ -170,6 +173,7 @@ const experiences = [
 ];
 
 const testimonials = [
+  /*
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
@@ -193,10 +197,30 @@ const testimonials = [
     designation: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
+  },*/
+ 
+    {
+      testimonial:
+        "Nikhil's dedication and problem-solving skills are unmatched. His ability to work with new technologies and passion for innovation set him apart as a developer.",
+      name: "Kajal Narang",
+      designation: "SRE",
+      company: "Cimpress",
+      image: kajalImage,  // Using the local image
+    },
+    {
+      testimonial:
+        "Nikhil is an incredibly talented and hardworking individual. His passion for coding is evident in everything he does. I’ve seen him excel in our college projects and would highly recommend him for any development work.",
+      name: "Vanshika Taya",
+      designation: "Second-year BTech Student",
+      company: "Your College",
+      image: vanshikaImage,  // Using the local image
+    },
+  
+  
 ];
 
 const projects = [
+  /* 
   {
     name: "Car Rent",
     description:
@@ -260,6 +284,30 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/",
   },
+  */
+
+  {
+    name: "3D Developer Portfolio",
+    description:
+      "An interactive 3D developer portfolio showcasing my skills and projects with immersive experiences, utilizing technologies like React, Three.js, and GLTF models.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "three.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "glTF",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide, 
+    //source_code_link: "your_live_demo_url", 
+  },
 ];
+
 
 export { services, technologies, experiences, testimonials, projects };
