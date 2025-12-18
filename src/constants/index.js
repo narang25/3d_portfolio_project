@@ -1,5 +1,8 @@
 import kajalImage from '../images/kajal-narang.jpg';  // Correct relative path
 import vanshikaImage from '../images/vanshika-taya.jpg';  // Correct relative path
+import littlemove from  '../images/lm.jpeg';  // Correct relative path
+import uberclone from  '../images/uberclone.png';  // Correct relative path
+import tryonme from  '../images/tryonme.png';  // Correct relative path
 
 import {
   mobile,
@@ -119,18 +122,18 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Full Stack Developer",
+    company_name: "Little Move",
+    icon: littlemove,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "July 2025-Aug 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Led the development of the live tracking system, working across both frontend and backend to deliver real-time vehicle and user location updates.",
+      "Built an interactive tracking page using Google Maps API, with live route rendering, dynamic marker updates, and smooth user interactions.",
+      "Developed backend APIs and integrated Socket.IO for real-time communication between clients and server, ensuring accurate, low-latency location sync.",
+      "Collaborated with cross-functional teams to ensure seamless data flow, responsive UI, and scalable system performance.",
     ],
-  },
+  },/*
   {
     title: "React Native Developer",
     company_name: "Tesla",
@@ -169,7 +172,7 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  },
+  },*/
 ];
 
 const testimonials = [
@@ -203,16 +206,16 @@ const testimonials = [
       testimonial:
         "Nikhil's dedication and problem-solving skills are unmatched. His ability to work with new technologies and passion for innovation set him apart as a developer.",
       name: "Kajal Narang",
-      designation: "SRE",
+      designation: "SRE at",
       company: "Cimpress",
       image: kajalImage,  // Using the local image
     },
     {
       testimonial:
-        "Nikhil is an incredibly talented and hardworking individual. His passion for coding is evident in everything he does. I’ve seen him excel in our college projects and would highly recommend him for any development work.",
+        "Nikhil is a talented and dedicated developer with a strong passion for coding. He consistently excels in college projects and comes highly recommended for development work.",
       name: "Vanshika Taya",
-      designation: "Second-year BTech Student",
-      company: "Your College",
+      designation: "Batchmate at",
+      company: "Dcrust",
       image: vanshikaImage,  // Using the local image
     },
   
@@ -306,6 +309,62 @@ const projects = [
     ],
     image: tripguide, 
     //source_code_link: "your_live_demo_url", 
+  },
+   {
+    name: "Uber Clone",
+description:
+  "A full-stack ride-hailing web application that allows users to book rides in real time, track drivers live on the map, calculate fares dynamically, and manage authentication securely, replicating core functionalities of Uber.",
+tags: [
+  {
+    name: "react",
+    color: "blue-text-gradient",
+  },
+  {
+    name: "nodejs",
+    color: "green-text-gradient",
+  },
+  {
+    name: "mongodb",
+    color: "green-text-gradient",
+  },
+  {
+    name: "socket.io",
+    color: "pink-text-gradient",
+  },
+  {
+    name: "google-maps-api",
+    color: "blue-text-gradient",
+  },
+],
+image: uberclone,
+source_code_link: "https://github.com/narang25/Uber_Video",
+
+  },{
+    name: "Try-On-Me",
+description:
+  "A smart virtual try-on web application that allows users to visualize how different outfits look based on their skin tone and appearance. The system dynamically changes clothing styles and colors to help users choose what suits them best before purchasing.",
+tags: [
+  {
+    name: "react",
+    color: "blue-text-gradient",
+  },
+  {
+    name: "three.js",
+    color: "green-text-gradient",
+  },
+  {
+    name: "nodejs",
+    color: "green-text-gradient",
+  },
+  {
+    name: "tailwind",
+    color: "pink-text-gradient",
+  },
+  
+],
+image: tryonme,
+source_code_link: "https://github.com/narang25/tryonme",
+
   },
 ];
 

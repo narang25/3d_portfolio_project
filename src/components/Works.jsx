@@ -80,7 +80,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Introducing my first project! Or as I like to call it, a glorious collection of errors, bugs, and procrastination-induced breakdowns. I spent more time staring at one error for hours than I did actually coding. But after what felt like an eternity of 'why is this not working?!', I managed to get it done. It’s a product of my sheer determination... and maybe a few desperate Google searches. It’s not perfect, but hey, it works... most of the time!
+          These projects represent my evolution as a developer, built through experimentation, problem-solving, and continuous improvement. Every challenge strengthened my technical foundation and pushed me to think more critically about design, performance, and usability. Each project reflects my commitment to building better, more reliable software with every iteration.
         </motion.p>
       </div>
 

@@ -125,19 +125,49 @@ const Contact = () => {
     <h3 className="text-white text-[24px] font-bold mb-4">Connect with me</h3>
     <div className="flex gap-6">
 
-      <a
-        href="https://www.linkedin.com/in/nikhil-narang25/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-          alt="LinkedIn"
-          className="w-10 h-10 rounded-full bg-white p-2 hover:scale-110 transition duration-300"
-        />
-      </a>
+      
+  <div className="flex gap-4">
+  <a
+    href="https://www.linkedin.com/in/nikhil-narang25/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+      alt="LinkedIn"
+      className="w-10 h-10 bg-white p-2 hover:scale-110 transition duration-300"
+    />
+  </a>
+
+  <a
+    href="https://x.com/404notout"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+      alt="X (Twitter)"
+      className="w-10 h-10 bg-white p-2 hover:scale-110 transition duration-300"
+    />
+  </a>
+
+  <a
+    href="https://github.com/narang25"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+      alt="GitHub"
+      className="w-10 h-10 bg-white p-2 hover:scale-110 transition duration-300"
+    />
+  </a>
+</div>
+
+</div>
+
     </div>
-  </div>
+  
       </motion.div>
 
       <motion.div
