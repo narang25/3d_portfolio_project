@@ -47,10 +47,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a passionate problem solver who treats DSA challenges like mini boss fights — 
-        armed with coffee, persistence, and just a little bit of Googling. When I'm not cracking algorithms, 
-        I love building cool things using JavaScript, React, Node.js, and Three.js. 
-        I'm always hungry to learn (and occasionally just hungry), and I enjoy turning creative ideas into real-world projects. If you're looking for someone who can blend logic with creativity — and have some fun along the way — let's team up and build something awesome!
+        I'm a full-stack developer who loves building things that actually work in the real world. 
+        I've shipped a ride-hailing app with live GPS tracking and Socket.io, a virtual try-on platform powered by Three.js and computer vision, 
+        and a production-ready AI data dictionary that lets teams query databases in plain English — deployed on AWS with FastAPI, pgvector, Redis, and Celery under the hood. 
+        I'm drawn to problems that sit at the intersection of systems, AI, and great user experience. 
+        If you need someone who can take an idea from architecture to deployment and make it scale — let's build something together.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

@@ -140,7 +140,7 @@ const Contact = () => {
   </a>
 
   <a
-    href="https://x.com/404notout"
+    href="https://x.com/techie24502"
     target="_blank"
     rel="noopener noreferrer"
   >

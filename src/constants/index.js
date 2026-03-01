@@ -1,8 +1,11 @@
 import kajalImage from '../images/kajal-narang.jpg';  // Correct relative path
 import vanshikaImage from '../images/vanshika-taya.jpg';  // Correct relative path
 import littlemove from  '../images/lm.jpeg';  // Correct relative path
+import tracyImage from '../images/tracy.png';  // Correct relative path
 import uberclone from  '../images/uberclone.png';  // Correct relative path
 import tryonme from  '../images/tryonme.png';  // Correct relative path
+import idd from  '../images/idd.png';  // Intelligent Data Dictionary
+import linkedinExtension from '../images/linkedin.png';  // LinkedIn Auto Connect Extension
 
 import {
   mobile,
@@ -29,6 +32,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  aws,
 } from "../assets";
 
 export const navLinks = [
@@ -41,6 +45,14 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "leadership",
+    title: "Leadership",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -48,19 +60,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full-Stack Developer",
     icon: web,
   },
   {
-    title: "Problem Solver",
+    title: "AI & LLM Integration",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Backend & API Design",
     icon: backend,
   },
   {
-    title: "Cloud Native",
+    title: "Cloud & DevOps (AWS)",
     icon: creator,
   },
 ];
@@ -201,7 +213,14 @@ const testimonials = [
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },*/
- 
+ {
+  testimonial:
+    "Nikhil onboarded as an AWS Cloud Club Captain in November 2025. His leadership and passion for cloud technology will help him build a thriving cloud community and inspire many students to explore innovation.",
+  name: "Tracy Wang",
+  designation: "AWS Cloud Club Program",
+  company: "Amazon Web Services (AWS)",
+  image: tracyImage, // Add Tracy's image here
+},
     {
       testimonial:
         "Nikhil's dedication and problem-solving skills are unmatched. His ability to work with new technologies and passion for innovation set him apart as a developer.",
@@ -218,6 +237,7 @@ const testimonials = [
       company: "Dcrust",
       image: vanshikaImage,  // Using the local image
     },
+    
   
   
 ];
@@ -290,83 +310,163 @@ const projects = [
   */
 
   {
-    name: "3D Developer Portfolio",
+    name: "Intelligent Data Dictionary (IDD)",
     description:
-      "An interactive 3D developer portfolio showcasing my skills and projects with immersive experiences, utilizing technologies like React, Three.js, and GLTF models.",
+      "A production-ready AI-powered data dictionary and natural language SQL generation platform that enables data teams to explore, document, and query complex databases using conversational AI, semantic vector search, and automated data profiling.",
     tags: [
+      {
+        name: "fastapi",
+        color: "green-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "three.js",
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "pgvector",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "docker",
         color: "green-text-gradient",
       },
       {
-        name: "glTF",
+        name: "redis",
         color: "pink-text-gradient",
       },
+      {
+        name: "celery",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "groq-llm",
+        color: "green-text-gradient",
+      },
     ],
-    image: tripguide, 
-    //source_code_link: "your_live_demo_url", 
+    image: idd,
+    source_code_link: "https://github.com/narang25/intelligent-data-dictionary-agent",
+    live_link: "http://50.17.59.55/login",
   },
    {
-    name: "Uber Clone",
-description:
-  "A full-stack ride-hailing web application that allows users to book rides in real time, track drivers live on the map, calculate fares dynamically, and manage authentication securely, replicating core functionalities of Uber.",
-tags: [
-  {
-    name: "react",
-    color: "blue-text-gradient",
-  },
-  {
-    name: "nodejs",
-    color: "green-text-gradient",
-  },
-  {
-    name: "mongodb",
-    color: "green-text-gradient",
-  },
-  {
-    name: "socket.io",
-    color: "pink-text-gradient",
-  },
-  {
-    name: "google-maps-api",
-    color: "blue-text-gradient",
-  },
-],
-image: uberclone,
-source_code_link: "https://github.com/narang25/Uber_Video",
+  name: "Uber Clone — Real-Time Ride Booking System",
+  description:
+    "A full-stack, production-ready Uber clone featuring real-time ride booking, live GPS tracking, OTP-based ride verification, and captain matching using WebSockets. Built with React, Node.js, MongoDB, and Socket.IO, fully Dockerized and deployed on AWS with Nginx reverse proxy — using 100% free open-source mapping services (OpenStreetMap, Photon, OSRM) without paid APIs.",
+  tags: [
+    {
+      name: "react",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "nodejs",
+      color: "green-text-gradient",
+    },
+    {
+      name: "mongodb",
+      color: "pink-text-gradient",
+    },
+    {
+      name: "socket.io",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "docker",
+      color: "green-text-gradient",
+    },
+    {
+      name: "nginx",
+      color: "pink-text-gradient",
+    },
+    {
+      name: "aws",
+      color: "blue-text-gradient",
+    },
+  ],
+  image: uberclone, // Add your project image variable here
+  source_code_link: "https://github.com/narang25/Uber_Video",
+  live_link: "http://50.17.59.55:8080",
+},{
+  name: "Try-On Me — Virtual Clothing Try-On Prototype",
+  description:
+    "A web-based virtual clothing try-on prototype that allows users to upload a front-facing photo and preview how a clothing item would look using image overlay simulation. Includes skin-tone color compatibility checks and outfit pairing suggestions. Built as a proof-of-concept to demonstrate the core idea of AI-powered virtual fashion try-ons.",
+  tags: [
+    {
+      name: "react",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "nodejs",
+      color: "green-text-gradient",
+    },
+    {
+      name: "express",
+      color: "pink-text-gradient",
+    },
+    {
+      name: "tailwind",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "multer",
+      color: "green-text-gradient",
+    },
+  ],
+  image: tryonme, // Add your project image variable here
+  source_code_link: "https://github.com/narang25/tryonme",
+},
+{
+  name: "LinkedIn Auto Connect — Chrome Extension",
+  description:
+    "A Chrome extension that automates sending LinkedIn connection or follow requests with configurable limits, delays, optional personalized notes, and real-time progress tracking. Built using Manifest V3 with DOM scripting and smart filtering to mimic human interaction patterns. Developed for educational and research purposes.",
+  tags: [
+    {
+      name: "javascript",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "chrome-extension",
+      color: "green-text-gradient",
+    },
+    {
+      name: "manifest-v3",
+      color: "pink-text-gradient",
+    },
+    {
+      name: "dom-automation",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "css",
+      color: "green-text-gradient",
+    },
+  ],
+  image: linkedinExtension, // Add your project image variable here
+  source_code_link: "https://github.com/narang25/linkedin-auto-connect-extension",
+},
+];
 
-  },{
-    name: "Try-On-Me",
-description:
-  "A smart virtual try-on web application that allows users to visualize how different outfits look based on their skin tone and appearance. The system dynamically changes clothing styles and colors to help users choose what suits them best before purchasing.",
-tags: [
+const achievements = [
   {
-    name: "react",
-    color: "blue-text-gradient",
+    title: "AWS Cloud Club Captain",
+    organization: "Amazon Web Services (AWS)",
+    date: "November 2025 — Present",
+    description:
+      "Selected as AWS Cloud Club Captain at DCRUST, leading a student community focused on cloud computing, AWS technologies, and hands-on learning. Responsible for organizing events, workshops, and fostering a culture of cloud innovation on campus.",
+    icon: aws,
+    iconBg: "#232631",
   },
   {
-    name: "three.js",
-    color: "green-text-gradient",
-  },
-  {
-    name: "nodejs",
-    color: "green-text-gradient",
-  },
-  {
-    name: "tailwind",
-    color: "pink-text-gradient",
-  },
-  
-],
-image: tryonme,
-source_code_link: "https://github.com/narang25/tryonme",
-
+    title: "Amazon ML Summer School",
+    organization: "Amazon",
+    date: "July — August 2025",
+    description:
+      "Selected for the competitive Amazon ML Summer School 2025, gaining in-depth knowledge of machine learning fundamentals, supervised and unsupervised learning, deep learning, and practical ML applications through sessions led by Amazon scientists.",
+    icon: aws,
+    iconBg: "#232631",
   },
 ];
 
-
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, achievements };

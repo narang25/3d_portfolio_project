@@ -6,7 +6,7 @@ const SocialLinks = () => {
       <h2 className="text-white text-[24px] font-bold mb-6">Connect with me</h2>
       <div className="flex gap-10">
         <a
-          href="https://github.com/your-github-username"
+          href="https://github.com/narang25"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -17,7 +17,7 @@ const SocialLinks = () => {
           />
         </a>
         <a
-          href="https://linkedin.com/in/your-linkedin-username"
+          href="https://www.linkedin.com/in/nikhil-narang25/"
           target="_blank"
           rel="noopener noreferrer"
         >

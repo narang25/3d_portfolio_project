@@ -15,6 +15,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -33,10 +34,20 @@ const ProjectCard = ({
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-2'>
+            {live_link && (
+              <div
+                onClick={() => window.open(live_link, "_blank")}
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                title='Live Demo'
+              >
+                <span className='text-white text-[16px]'>🌐</span>
+              </div>
+            )}
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              title='Source Code'
             >
               <img
                 src={github}
@@ -80,7 +91,10 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          These projects represent my evolution as a developer, built through experimentation, problem-solving, and continuous improvement. Every challenge strengthened my technical foundation and pushed me to think more critically about design, performance, and usability. Each project reflects my commitment to building better, more reliable software with every iteration.
+          These are projects I've shipped — not just side experiments, but real systems with real users and real infrastructure. 
+          From a live ride-hailing platform with real-time GPS tracking, to a virtual try-on app that matches outfits to your appearance, 
+          to a production AI agent that lets teams talk to their databases in plain English and deployed on AWS. 
+          Each one pushed me to go deeper — into system design, cloud architecture, and building software that actually holds up.
         </motion.p>
       </div>
 
@@ -93,4 +107,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
