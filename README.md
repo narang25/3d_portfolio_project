@@ -2,7 +2,7 @@
 
 A modern, interactive 3D developer portfolio built with React, Three.js, and Tailwind CSS. Features immersive 3D models, smooth animations, a working contact form, and sections for experience, projects, leadership, and testimonials.
 
-🌐 **Live:** [nikhilfolio25.netlify.app](https://nikhilfolio25.netlify.app)
+🌐 **Live:** [nikhilportfolio25.netlify.app](https://nikhilportfolio25.netlify.app)
 
 ---
 
